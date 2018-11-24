@@ -6,7 +6,7 @@ ADD ./cert  cert
 ADD ./scripts/publish.py publish.py
 ADD ./requirements.txt requirements.txt
 
-RUN pip install -r requirements.txt #-t .
+RUN pip install -r requirements.txt
 
 
 CMD ["python", "publish.py"]
