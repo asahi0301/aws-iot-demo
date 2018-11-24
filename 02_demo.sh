@@ -1,0 +1,1 @@
+docker run --rm -it iot-internal-demo:latest
