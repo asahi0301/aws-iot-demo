@@ -1,1 +1,1 @@
-docker run --rm -it iot-internal-demo:latest
+docker run --rm -it aws-iot-demo:latest
