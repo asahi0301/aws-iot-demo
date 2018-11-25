@@ -1,0 +1,1 @@
+aws dynamodb create-table --table-name iot-demo-direct --attribute-definitions AttributeName=clientid,AttributeType=S AttributeName=timestamp,AttributeType=N --key-schema AttributeName=clientid,KeyType=HASH AttributeName=timestamp,KeyType=RANGE --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 --region ap-northeast-1
