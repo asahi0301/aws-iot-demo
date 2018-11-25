@@ -1,0 +1,1 @@
+aws create-stream --stream-name iot-demo-stream --shard-count 1 --region ap-northeast-1
