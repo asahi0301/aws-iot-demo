@@ -1,0 +1,1 @@
+docker run --rm -it aws-iot-demo:latest python subscribe.py

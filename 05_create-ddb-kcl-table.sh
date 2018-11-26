@@ -1,0 +1,1 @@
+aws dynamodb create-table --table-name iot-demo-kcl --attribute-definitions AttributeName=SequenceNumber,AttributeType=S --key-schema AttributeName=SequenceNumber,KeyType=HASH --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 --region ap-northeast-1

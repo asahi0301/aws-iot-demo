@@ -2,6 +2,7 @@ ENDPOINT=`aws iot describe-endpoint --endpoint-type iot:Data-ATS --region ap-nor
 
 echo "Your IoT Endpoint is : " $ENDPOINT
 sed -e "s/ENDPOINT/${ENDPOINT}/g" scripts/publish-original.py > scripts/publish.py
+sed -e "s/ENDPOINT/${ENDPOINT}/g" scripts/subscribe-original.py > scripts/subscribe.py
 
 echo "Generating your device cert...."
 OUTPUT=`aws iot create-keys-and-certificate --set-as-active --region ap-northeast-1`

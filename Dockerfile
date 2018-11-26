@@ -4,6 +4,7 @@ RUN mkdir /root/aws-iot-demo
 WORKDIR /root/aws-iot-demo
 ADD ./cert  cert
 ADD ./scripts/publish.py publish.py
+ADD ./scripts/subscribe.py subscribe.py
 ADD ./requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
